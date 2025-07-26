@@ -1,0 +1,49 @@
+CREATE DATABASE db;
+USE db;
+
+CREATE TABLE student (
+	id INT PRIMARY KEY,
+    name VARCHAR(100),
+    age INT NOT NULL
+);
+
+INSERT INTO student VALUES (1, "AUSAF", 21);
+INSERT INTO student VALUES (2, "CHARAN", 21);
+INSERT INTO student VALUES (3, "AQIB", 21);
+INSERT INTO student VALUES (4, "BILAL", 20);
+
+SELECT * FROM student;
+
+CREATE TABLE country (
+	id INT PRIMARY KEY,
+    name VARCHAR(100)
+);
+
+INSERT INTO country VALUES (1, "PAKISTAN");
+INSERT INTO country VALUES (2, "CHINA");
+INSERT INTO country VALUES (3, "IRAN");
+
+SELECT * FROM country;
+
+CREATE TABLE temp (
+	id INT UNIQUE
+);
+
+INSERT INTO temp VALUES (101);
+INSERT INTO temp VALUES (102);
+
+SELECT * FROM temp;
+
+CREATE TABLE temp1 (
+	id INT,
+    name VARCHAR(100),
+    age INT,
+    city VARCHAR(100),
+    PRIMARY KEY (id, name)
+);
+
+INSERT INTO temp1 VALUES (1, "AUSAF", 21, "KARACHI");
+INSERT INTO temp1 VALUES (2, "CHARAN", 21, "KARACHI");
+INSERT INTO temp1 VALUES (3, "AQIB", 21, "KARACHI");
+
+SELECT * FROM temp1;
