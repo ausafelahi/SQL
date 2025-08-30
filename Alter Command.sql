@@ -47,3 +47,4 @@ ALTER TABLE result
 DROP COLUMN grade;
 
 -- JOINS Command
+
